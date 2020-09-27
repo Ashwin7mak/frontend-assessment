@@ -1,0 +1,320 @@
+@import "~react-vis/dist/style";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #F2F2F2;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 0;
+}
+
+.header-container>img {
+    max-height: 60px;
+    margin: 0;
+}
+
+#header>span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.main-container {
+    margin-top: 120px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+
+.details-container {
+    background-color: white;
+    margin-top: 40px;
+}
+
+.graph-subtitle {
+    margin-left: 15px;
+    font-weight: 90;
+    font-size: 11px;
+    color: grey;
+}
+
+.graph-title {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: -8px;
+    font-weight: 90;
+}
+
+.graph-container {
+    background-color: white;
+    padding-top: 5px;
+}
+
+.graph-container-2 {
+    background-color: white;
+    padding-top: 5px;
+    height: 500px;
+    vertical-align: center;
+}
+
+.content-container {
+    margin-left: 10px;
+    width: 920px;
+    flex: 0.98;
+}
+
+.side-panel-container {
+    background-color: white;
+    width: 20%;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: center;
+    -moz-box-shadow: 3px 3px 5px -2px rgba(34, 32, 32, 0.1);
+    -webkit-box-shadow: 3px 3px 5px -2px rgba(0, 0, 0, 0.1);
+}
+
+.item-avatar {
+    width: 100px;
+}
+
+.item-description {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card {
+    max-width: 200px;
+}
+
+.title {
+    margin-bottom: -5px;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: grey;
+}
+
+.tag-container {
+    border-top: solid #F2F2F2 2px;
+    border-bottom: solid #F2F2F2 2px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.tag-sub-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+}
+
+.tag {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 3px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    color: #2E2E2E;
+    border: 1px solid rgb(231, 231, 231);
+    border-style: rounded;
+    border-radius: 4px;
+    padding: 2px 12px 2px 12px;
+}
+
+.side-nav-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.btn {
+    margin-top: 30px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+
+.btn>i {
+    margin-right: 8px;
+}
+
+#overview-icon,
+#sales-icon {
+    margin: 10%;
+}
+
+#overview-icon-text,
+#sales-icon-text {
+    margin-left: 5%;
+}
+
+.detail-table {
+    width: 100%;
+}
+
+.table-head {
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-top: solid #F2F2F2 2px;
+}
+
+th {
+    padding-left: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 10px;
+    font-weight: 100;
+    color: #262626;
+}
+
+td {
+    color: grey;
+    font-size: 11px;
+    font-weight: 100;
+    margin-top: 4px;
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.description-container {
+    height: 300px;
+    background-color: white;
+    margin-bottom: 40px;
+    padding-top: 15px;
+}
+
+.description-title {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+.description {
+    margin-right: 40px;
+    margin-left: 20px;
+    font-size: 12px;
+    color: grey;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #008DA9;
+    border-top: 1px solid #008DA9;
+}
+
+.product-retailer {
+    margin-right: 40px;
+    margin-left: 20px;
+    font-size: 12px;
+    color: grey;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.product-retailer>p {
+    color: black;
+    margin-bottom: -0.5px;
+}
+
+.review-title {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+.review-container {
+    height: 300px;
+    background-color: white;
+    padding-top: 15px;
+}
+
+.review-subcontainer {
+    border-top: 1px solid #008DA9;
+    padding-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.review {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: grey;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.reviewer {
+    text-align: right;
+}
+
+.score {
+    text-align: right;
+    color: grey;
+    font-size: 11px;
+}
+
+@media (min-width:641px) and (max-width:859px) {
+    .main-container {
+        display: inline-block;
+        margin-top: 120px;
+    }
+    .side-panel-container {
+        width: 920px;
+        justify-content: center;
+        height: 400px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 860px) and (max-width:1049px) {
+    .main-container {
+        display: inline-block;
+        margin-top: 120px;
+    }
+    .side-panel-container {
+        width: 920px;
+        justify-content: center;
+        height: 400px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1180px) {
+    .main-container {
+        flex-direction: row;
+    }
+    .content-container {
+        flex: 0.95;
+    }
+}
